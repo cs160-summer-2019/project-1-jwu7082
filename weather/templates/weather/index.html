@@ -1,34 +1,30 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Current Weather</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
-</head>
-<body>
+<html lang="en">
+    <head>
+       <title>Current Weather</title>
+       <meta charset="UTF-8">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+    </head>
 
-	<!-- replace this html -->
-	<div class="container">
-		<div class="jumbotron text-light bg-primary">
-			<h1>Congratulations</h1>
-			<p>You've set your environment up correctly!</p>
-		</div>
+    <body>
+       <!-- remove below after setup -->
+        <div class="container">
+            <div class="jumbotron text-light bg-primary">
+                <h1>Congratulations</h1>
+                <p>You've set your environment up correctly!</p>
+            </div>
 
-		<a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
-		<a href="/weather/forecast/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast with alert</a>
-		<a href="/weather/comparison/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison</a>
-		<a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>
-	</div>
-	
-	<!-- /replace this html -->
-</body>
+            <a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
+            <a href="/weather/forecast/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast with alert</a>
+            <a href="/weather/comparison/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison</a>
+            <a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>
+        </div>
+    </body>
 </html>
-
-
 
 
 
