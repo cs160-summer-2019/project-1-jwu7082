@@ -1,0 +1,16 @@
+// for collapsed containers (height 0) due to floated elements
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// centers an element via absolute positioning
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
