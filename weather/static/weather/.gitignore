@@ -1,5 +1,5 @@
-../../../p1/__pycache__/*
-../../__pycache__/*
-../../migrations/*
+../../../p1/__pycache__/
+../../__pycache__/
+../../migrations/
 package-lock.json
 node_modules/*
