@@ -1,5 +1,11 @@
-../../../p1/__pycache__/
-../../__pycache__/
-../../migrations/
 package-lock.json
 node_modules/*
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
