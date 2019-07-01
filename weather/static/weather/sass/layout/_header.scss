@@ -1,5 +1,5 @@
 .header {
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(to left bottom, 
         $sunset-secondary, 
         $sunset-primary,
@@ -33,11 +33,12 @@
     margin: 0;
     
     .search-icon {
-        transform: translate(7rem, -.5rem); // manual positioning fix, no time to solve lol
+        transform: translate(7rem, -.7rem); // manual positioning fix, no time to solve lol
     }
     
     .search-bar {
         margin: 2.5rem auto;
+        margin-top: 3rem;
         transform: translateX(9rem); // manual positioning fix, no time to solve lol
         display: inline-block;
         color: $dark-gray-3;

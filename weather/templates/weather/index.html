@@ -184,16 +184,153 @@
             var map = new mapboxgl.Map({
                 container: 'map', // container id
                 style: 'mapbox://styles/jwu7082/cjxjwg6di51je1cptubb4bits', // style id
-    //        center: [-77.38, 39], // starting position
-    //        zoom: 3 // starting zoom
                 scrollZoom: false
             });
             </script>
        </div>
             
        <div class="section-cities">
-           placeholder
-       </div>
+           <div id="city-carousel" class="carousel slide" data-ride="carousel">
+              
+               <!-- BOOTSTRAP CAROUSEL INDICATORS -->
+                <ol class="carousel-indicators">
+                    <li data-target="#city-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#city-carousel" data-slide-to="1"></li>
+                    <li data-target="#city-carousel" data-slide-to="2"></li>
+                </ol>
+                
+               <div class="carousel-inner">
+                  <!-- FIRST SLIDE -->
+                   <div class="carousel-item active">
+                         <!-- SLIDE CONTENT -->
+                          <div class="container-fluid card-page" alt="First Slide">
+                            <div class="row">
+                                    <div class="col card-container">
+                                          <div class="card">
+                                             <p>Indianapolis</p>
+                                              <div class="icon-wrapper"><ion-icon name="cloudy"></ion-icon></div>
+                                              <p class="temp">69&deg;</p>
+                                          </div>
+                                    </div>
+                                    <div class="col card-container">
+                                        <div class="card">
+                                           <p>Chicago</p>
+                                            <div class="icon-wrapper"><ion-icon name="sunny"></ion-icon></div>
+                                            <p class="temp">73&deg;</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col card-container">
+                                    <div class="card">
+                                       <p>Flower Mound</p>
+                                        <div class="icon-wrapper"><ion-icon name="partly-sunny"></ion-icon></div>
+                                        <p class="temp">84&deg;</p>
+                                    </div>
+                                </div>
+                                <div class="col card-container">
+                                      <div class="card">
+                                         <p>Oakland</p>
+                                          <div class="icon-wrapper"><ion-icon name="cloudy"></ion-icon></div>
+                                          <p class="temp">70&deg;</p>
+                                      </div>
+                                </div>
+                           </div>
+                       </div>
+                       <!-- END OF SLIDE CONTENTS -->
+                    </div> <!-- END OF 1ST SLIDE -->
+                    
+                    <!-- SECOND SLIDE -->
+                    <div class="carousel-item">
+                        <div class="carousel-item active">
+                         <!-- SLIDE CONTENT -->
+                          <div class="container-fluid card-page" alt="Second Slide">
+                            <div class="row">
+                                    <div class="col card-container">
+                                          <div class="card">
+                                             <p>Chino</p>
+                                              <div class="icon-wrapper"><ion-icon name="rainy"></ion-icon></div>
+                                              <p class="temp">75&deg;</p>
+                                          </div>
+                                    </div>
+                                    <div class="col card-container">
+                                        <div class="card">
+                                           <p>San Francisco</p>
+                                            <div class="icon-wrapper"><ion-icon name="partly-sunny"></ion-icon></div>
+                                            <p class="temp">68&deg;</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col card-container">
+                                    <div class="card">
+                                       <p>Rancho Cucamonga</p>
+                                        <div class="icon-wrapper"><ion-icon name="sunny"></ion-icon></div>
+                                        <p class="temp">88&deg;</p>
+                                    </div>
+                                </div>
+                                <div class="col card-container">
+                                      <div class="card">
+                                         <p>Concord</p>
+                                          <div class="icon-wrapper"><ion-icon name="sunny"></ion-icon></div>
+                                          <p class="temp">83&deg;</p>
+                                      </div>
+                                </div>
+                           </div>
+                        </div>
+                        <!-- END OF SLIDE CONTENTS -->
+                    </div>
+                </div> <!-- END OF 2ND SLIDE -->
+                    
+                <!-- THIRD SLIDE -->
+                <div class="carousel-item">
+                    <div class="carousel-item active">
+                       <!-- SLIDE CONTENT -->
+                          <div class="container-fluid card-page" alt="Third Slide">
+                            <div class="row">
+                                    <div class="col card-container">
+                                          <div class="card">
+                                              <div class="icon-wrapper"><ion-icon name="cloudy"></ion-icon></div>
+                                          </div>
+                                    </div>
+                                    <div class="col card-container">
+                                        <div class="card">
+                                            <div class="icon-wrapper"><ion-icon name="sunny"></ion-icon></div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col card-container">
+                                    <div class="card">
+                                        <div class="icon-wrapper"><ion-icon name="thunderstorm"></ion-icon></div>
+                                    </div>
+                                </div>
+                                <div class="col card-container">
+                                      <div class="card">
+                                          <div class="icon-wrapper"><ion-icon name="partly-sunny"></ion-icon></div>
+                                      </div>
+                                </div>
+                           </div>
+                        </div>
+                       <!-- END OF SLIDE CONTENTS -->
+                    </div>
+                </div> <!-- END OF 3RD SLIDE -->
+            </div>
+            
+            <!-- BOOTSTRAP CAROUSEL CONTROLS -->
+             <a class="carousel-control-prev" href="#city-carousel" role="button" data-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="sr-only">Previous</span>
+             </a>
+             <a class="carousel-control-next" href="#city-carousel" role="button" data-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="sr-only">Next</span>
+            </a>
+            
+        </div> <!-- END OF CAROUSEL -->
+
+         <!-- TODO; ADD STICKY BUTTON -->
+    </div>
         
         <!-- Ionicons -->
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

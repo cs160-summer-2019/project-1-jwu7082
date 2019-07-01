@@ -89,10 +89,85 @@
     }
 }
 .section-cities {
-    height: 70vh; // placeholder
-    padding-top: 10px;
+//    height: 70vh; // placeholder
+//    padding: 30rem 7rem 12rem 7rem;
+    padding: 12rem 7rem;
     background-image: linear-gradient(to left bottom, 
         $sunset-tertiary, 
         $sunset-primary,
         $sunset-secondary);
+    
+    .card-page {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    // Note: somewhat a code repeat of .section-info. 
+    // If there were more time, reorganize cards as _card.scss file under sass/components
+    // or (if the styles aren't that similar) create a mix-in.
+    .row {
+        margin: 0;
+    }
+    
+    .card-container {
+        text-align: center;
+        padding: 0;
+        .card {
+            background-color: rgba($white, .9);
+            border-radius: 3px;
+            padding: 7rem;
+            margin: 2rem;
+            font-size: 12rem;
+            .icon-wrapper {
+                font-size: 12rem;
+            }
+            height: 40rem;
+            width: 23rem;
+        }
+    }
+    
+    #city-carousel {
+        overflow: hidden;
+        
+        p { // reflection of forecast horizontal slider (.section-forecast) - same red and gray hues
+            color: $dark-gray-3;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 3.7rem;   
+            
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .temp {
+            font-size: 6rem;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        
+        .icon-wrapper {
+            color: $sunset-primary;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .carousel-control-prev {
+            transform: scale(2) translateX(-3.5rem);
+        }
+        .carousel-control-next {
+            transform: scale(2) translateX(3.5rem);
+        }
+        .carousel-control {
+            width: 1%;
+        }
+
+    }
 }

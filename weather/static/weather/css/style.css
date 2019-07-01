@@ -23,7 +23,7 @@ body {
   text-align: center !important; }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(to left bottom, #3a1c71, #d76d77, #ffaf7b);
   background-size: cover;
   position: relative;
@@ -46,9 +46,10 @@ body {
 .section-search {
   margin: 0; }
   .section-search .search-icon {
-    transform: translate(7rem, -0.5rem); }
+    transform: translate(7rem, -0.7rem); }
   .section-search .search-bar {
     margin: 2.5rem auto;
+    margin-top: 3rem;
     transform: translateX(9rem);
     display: inline-block;
     color: #333;
@@ -144,6 +145,53 @@ body {
   height: 60vh; }
 
 .section-cities {
-  height: 70vh;
-  padding-top: 10px;
+  padding: 12rem 7rem;
   background-image: linear-gradient(to left bottom, #ffaf7b, #d76d77, #3a1c71); }
+  .section-cities .card-page {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  .section-cities .row {
+    margin: 0; }
+  .section-cities .card-container {
+    text-align: center;
+    padding: 0; }
+    .section-cities .card-container .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 3px;
+      padding: 7rem;
+      margin: 2rem;
+      font-size: 12rem;
+      height: 40rem;
+      width: 23rem; }
+      .section-cities .card-container .card .icon-wrapper {
+        font-size: 12rem; }
+  .section-cities #city-carousel {
+    overflow: hidden; }
+    .section-cities #city-carousel p {
+      color: #333;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 3.7rem;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .section-cities #city-carousel .temp {
+      font-size: 6rem;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .section-cities #city-carousel .icon-wrapper {
+      color: #d76d77;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .section-cities #city-carousel .carousel-control-prev {
+      transform: scale(2) translateX(-3.5rem); }
+    .section-cities #city-carousel .carousel-control-next {
+      transform: scale(2) translateX(3.5rem); }
+    .section-cities #city-carousel .carousel-control {
+      width: 1%; }
