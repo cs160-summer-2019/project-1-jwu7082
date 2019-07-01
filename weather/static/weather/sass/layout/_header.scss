@@ -16,7 +16,7 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     .col {
         font-size: 4rem;
         .sun-time {
@@ -29,8 +29,43 @@
     text-align: center;
 }
 
+.section-search {
+    margin: 0;
+    
+    .search-icon {
+        transform: translate(7rem, -.5rem); // manual positioning fix, no time to solve lol
+    }
+    
+    .search-bar {
+        margin: 2.5rem auto;
+        transform: translateX(9rem); // manual positioning fix, no time to solve lol
+        display: inline-block;
+        color: $dark-gray-3;
+        width: 80%;
+    
+        &__input {
+            font-size: 3rem;
+            padding: 1.5rem 2rem;
+            border-radius: 2px;
+            background-color: rgba($white, .5);
+            width: 90%;
+            display: block;
+            border: none;
+            font-family: inherit;
+            color: inherit;
+            border-bottom: 3px solid transparent;
+            transition: all .3s;
+            &:focus {
+                outline: none; // get rid of default blue outline
+                box-shadow: 0 1rem 2rem rgba(#000, .15);
+                border-bottom: 3px solid $sunset-primary-dark; // change?
+            }    
+        }
+    }
+}
+
 .weather {
-    padding-top: 30rem;
+    padding-top: 25rem;
     position: relative;
     
     &__city {

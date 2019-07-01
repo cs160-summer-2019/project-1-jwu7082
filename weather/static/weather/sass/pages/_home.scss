@@ -1,10 +1,14 @@
 .section-forecast {
-    height: 30vh; // placeholder
+    height: 20vh; // placeholder
 }
 
 .section-info {
-    height: 40vh; // placeholder
-    background-color: $light-gray-1;
+    height: 50vh; // placeholder
+    background-image: linear-gradient(45deg, 
+        $sunset-primary 0%,
+        $sunset-tertiary 40%,
+        $sunset-tertiary 60%,
+        $sunset-primary);
 }
 
 .section-map {
