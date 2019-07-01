@@ -6,34 +6,66 @@
        <title>Current Weather</title>
        <meta charset="UTF-8">
        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="../../static/weather/vendors/css/normalize.css" type="text/css">
+       <link href="../../static/weather/vendors/css/all.css" rel="stylesheet">
        
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <!-- BOOTSTRAP -->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
         
-        <link rel="stylesheet" href="/static/weather/vendors/bootstrap/css/bootstrap.css" type="text/css">
-        <link rel="stylesheet" href="/static/weather/css/style.css" type="text/css">
-        
-      <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+<!--      <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />-->
+<!--      <link rel="stylesheet" href="/static/weather/vendors/bootstrap/css/bootstrap.css" type="text/css">-->
+<!--       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />-->
+        <link rel="stylesheet" href="../../static/weather/css/style.css" type="text/css">
     </head>
 
     <body>
-       <!-- remove below after setup -->
-        <div class="container">
-            <div class="jumbotron text-light bg-primary">
-                <h1>Congratulations</h1>
-                <p>You've set your environment up correctly!</p>
+       <div class="header">
+            <div class="container-fluid extra-info">
+                <div class="row ">
+                    <div class="col extra-info__sunrise">
+                        <img src="../../static/weather/vendors/icons8/sunrise.png" alt="sunrise">
+                        <div class="sun-time">5:50</div>
+                    </div>
+                    <div class="col extra-info__sunset">
+                        <img src="../../static/weather/vendors/icons8/sunset.png" alt="sunset">
+                        <div class="sun-time">8:35</div>
+                    </div>
+                </div>
             </div>
 
-            <a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
-            <a href="/weather/forecast/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast with alert</a>
-            <a href="/weather/comparison/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison</a>
-            <a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>
-        </div>
+             <div class="weather u-center-text">
+                 <h2 class="weather__city">Berkeley</h2>
+                 <h1 class="weather__temp">67<span>&#8457;</span></h1>
+                 <h2 class="weather__descrip">Sunny</h2>
+                 <h2 class="weather__range">
+                     <span class="weather__range--hi">&uarr; 74&deg;</span>
+                     &nbsp;
+                     <span class="weather__range--lo">&darr; 55&deg;</span>
+                </h2>
+             </div>
+
+            <div class="btn-dual">
+            
+            </div>
+       </div>
+       
+       <div class="section-forecast">
+           
+       </div>
+       <div class="section-info">
+           
+       </div>
+       <div class="section-map">
+           
+       </div>
+       <div class="section-cities">
+           
+       </div>
         
         <!--<script src="js/script.js"></script>-->
     </body>
