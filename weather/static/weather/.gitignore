@@ -1,5 +1,9 @@
-package-lock.json
+**/.DS_Store
+**/__pycache__/
+
 node_modules/*
+package.json
+package-lock.json
 
 ### Django ###
 *.log
