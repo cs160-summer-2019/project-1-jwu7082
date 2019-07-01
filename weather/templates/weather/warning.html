@@ -18,22 +18,25 @@
         <!-- MAPBOX -->
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
-        <!-- SOURCES
-                https://docs.mapbox.com/help/tutorials/add-points-pt-1/
-                https://docs.mapbox.com/help/tutorials/add-points-pt-2/
-                https://www.vexels.com/png-svg/preview/157203/banner-location-symbol 
-                    in color $sunset-primary-dark (see sass/abstracts/_variables.scss)
-        -->
-        
-        
-<!--      <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />-->
-<!--      <link rel="stylesheet" href="/static/weather/vendors/bootstrap/css/bootstrap.css" type="text/css">-->
-<!--       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />-->
+       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
         <link rel="stylesheet" href="../../static/weather/css/style.css" type="text/css">
+        <link rel="stylesheet" href="../../static/weather/css/warning-style.css" type="text/css">
     </head>
 
     <body>
        <div class="header">
+          <!-- EXTREME WEATHER NOTIFICATION -->
+           <div class="card text-white bg-danger mb-3 alert-card">
+          <div class="card-header">
+              <i class="fas fa-window-close card-close"></i>
+              Extreme Weather Alert
+          </div>
+          <div class="card-body">
+                <p class="card-text">There is extreme weather in 3 of your saved locations and 2 nearby cities.</p>
+                <p> Tap to see more information.</p>
+          </div>
+        </div>
+
             <div class="container-fluid extra-info">
                 <div class="row ">
                     <div class="col extra-info__sunrise">
@@ -187,17 +190,6 @@
             
        <div class="section-cities">
            <div id="city-carousel" class="carousel slide" data-ride="carousel">
-              
-               <!-- BOOTSTRAP CAROUSEL INDICATORS -->
-               <!-- TODO: STYLE INDICATORS INTO CIRCLES/BULLETS! -->
-<!--
-                <ol class="carousel-indicators">
-                    <li data-target="#city-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#city-carousel" data-slide-to="1"></li>
-                    <li data-target="#city-carousel" data-slide-to="2"></li>
-                </ol>
--->
-                
                <div class="carousel-inner">
                   <!-- FIRST SLIDE -->
                    <div class="carousel-item active">
@@ -327,13 +319,9 @@
             </a>
             
         </div> <!-- END OF CAROUSEL -->
-
          <!-- TODO; ADD STICKY BUTTON -->
-    </div>
-        
-        <!-- Ionicons -->
+        </div>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <!--<script src="js/script.js"></script>--> 
     </body>
 </html>
 

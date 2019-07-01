@@ -1,0 +1,41 @@
+.header {
+    position: relative;
+    transform: translateY(-40rem);
+    padding-bottom: 40rem;
+}
+
+.alert-card {
+    text-align: center;
+    z-index: 999;
+/*
+    position: fixed !important;
+    height: 55rem;
+    top: 0 !important;
+*/
+/*
+    visibility: hidden;
+    opacity: 0;
+*/
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    transform: translateY(40rem);
+    font-size: 4rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.card-header {
+    text-transform: uppercase;
+    padding: 6rem;
+    font-size: 6rem;
+}
+
+.card-body {
+    padding: 5rem;
+    font-size: 4rem;
+}
+
+.card-close {
+    transform: translateX(-3rem);
+}
