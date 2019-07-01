@@ -1,5 +1,6 @@
 # P1
-In-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
+* In-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
+* Front-end created from scratch using Sass (SCSS) and minimal Bootstrap (Grid and carousel). 
 
 ### Index
 * File: `weather/templates/weather/index.html`
@@ -12,14 +13,15 @@ In-depth assignment description in the Google Doc [here](https://docs.google.com
 * Comparison across locations with alert: `weather/templates/weather/warning.html`
 * CSS for styling: `weather/static/weather/css/style.css`
 
-#### App Preview: No Alert
-Missing features from wireframe: 
+#### Missing features from wireframe: 
 * Temperature labels on map location markers 
 * Time selector to change the hour of the displayed temperatures on both the map and saved city cards (enables users to view forecasts of nearby/saved locations at a specific time)
 * Sticky button on bottom right corner of city cards to edit list of saved cities 
 * Delete card feature upon clicking a city card
 * Mile drop-down menu on map to adjust radial distance of nearby cities
 * Button toggles to switch between Fahrenheit/Celsius or Hourly/Daily forecasts
+
+#### App Preview: No Alert
 ![](app_no-alert.gif)
 
 #### App Preview: With Alert
