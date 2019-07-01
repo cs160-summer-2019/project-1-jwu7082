@@ -13,6 +13,16 @@
 * Comparison across locations with alert: `weather/templates/weather/warning.html`
 * CSS for styling: `weather/static/weather/css/style.css`
 
+### URLs to access
+* Index: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
+* Includes forecast (single location) and comparison across multiple locations
+
+* Forecast (single location) no alert: `weather/templates/weather/`
+* Forecast (single location) with alert: `weather/templates/weather/warning/`
+* Comparison across locations no alert: `weather/templates/weather/`
+* Comparison across locations with alert: `weather/templates/weather/warning/`
+
+### App Preview/Information
 #### Missing features from wireframe: 
 * Temperature labels on map location markers 
 * Time selector to change the hour of the displayed temperatures on both the map and saved city cards (enables users to view forecasts of nearby/saved locations at a specific time)
@@ -26,12 +36,3 @@
 
 #### App Preview: With Alert
 ![](app_alert.gif)
-
-### URLs to access
-* Index: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
-* Includes forecast (single location) and comparison across multiple locations
-
-* Forecast (single location) no alert: `weather/templates/weather/`
-* Forecast (single location) with alert: `weather/templates/weather/warning/`
-* Comparison across locations no alert: `weather/templates/weather/`
-* Comparison across locations with alert: `weather/templates/weather/warning/`
