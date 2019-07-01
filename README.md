@@ -13,6 +13,13 @@ In-depth assignment description in the Google Doc [here](https://docs.google.com
 * CSS for styling: `weather/static/weather/css/style.css`
 
 #### App Preview: No Alert
+Missing features from wireframe: 
+* Temperature labels on map location markers 
+* Time selector to change the hour of the displayed temperatures on both the map and saved city cards (enables users to view forecasts of nearby/saved locations at a specific time)
+* Sticky button on bottom right corner of city cards to edit list of saved cities 
+* Delete card feature upon clicking a city card
+* Mile drop-down menu on map to adjust radial distance of nearby cities
+* Button toggles to switch between Fahrenheit/Celsius or Hourly/Daily forecasts
 ![](app_no-alert.gif)
 
 #### App Preview: With Alert
