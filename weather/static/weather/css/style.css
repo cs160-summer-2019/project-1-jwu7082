@@ -58,3 +58,19 @@ body {
   .weather__range--lo, .weather__range--hi {
     font-weight: 300;
     font-size: 5rem; }
+
+.section-forecast {
+  height: 30vh; }
+
+.section-info {
+  height: 40vh;
+  background-color: #f7f7f7; }
+
+.section-map .map {
+  z-index: 2;
+  height: 60vh; }
+
+.section-cities {
+  height: 40vh;
+  padding-top: 10px;
+  background-image: linear-gradient(to left bottom, #ffaf7b, #d76d77, #3a1c71); }

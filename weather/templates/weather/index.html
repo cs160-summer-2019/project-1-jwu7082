@@ -17,6 +17,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
         
+        <!-- Mapbox -->
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+        
 <!--      <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />-->
 <!--      <link rel="stylesheet" href="/static/weather/vendors/bootstrap/css/bootstrap.css" type="text/css">-->
 <!--       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />-->
@@ -55,21 +59,35 @@
        </div>
        
        <div class="section-forecast">
-           
+           placeholder
        </div>
        <div class="section-info">
-           
+           placeholder
        </div>
        <div class="section-map">
-           
+           <div class="map" id='map'></div>
+           <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoiand1NzA4MiIsImEiOiJjanhqdzJ1bTIxaWxwM3pvanVhaXgxbDVkIn0.6oaGe7OT5XIvjTvfZS_diQ';
+            var map = new mapboxgl.Map({
+                container: 'map', // container id
+                style: 'mapbox://styles/jwu7082/cjxjwg6di51je1cptubb4bits', // style id
+    //        center: [-77.38, 39], // starting position
+    //        zoom: 3 // starting zoom
+                scrollZoom: false
+            });
+            </script>
        </div>
+            
        <div class="section-cities">
-           
+           placeholder
        </div>
         
-        <!--<script src="js/script.js"></script>-->
+        <!--<script src="js/script.js"></script>--> 
     </body>
 </html>
+
+
+
 
 
 

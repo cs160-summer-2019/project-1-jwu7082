@@ -1,3 +1,23 @@
 .section-forecast {
-    
+    height: 30vh; // placeholder
+}
+
+.section-info {
+    height: 40vh; // placeholder
+    background-color: $light-gray-1;
+}
+
+.section-map {
+    .map {
+        z-index: 2;
+        height: 60vh;
+    }
+}
+.section-cities {
+    height: 40vh; // placeholder
+    padding-top: 10px;
+    background-image: linear-gradient(to left bottom, 
+        $sunset-tertiary, 
+        $sunset-primary,
+        $sunset-secondary);
 }
