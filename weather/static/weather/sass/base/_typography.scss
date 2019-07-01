@@ -5,3 +5,8 @@ body {
     color: $dark-gray-3;
 }
 
+.gradient-text {
+    background-image: linear-gradient(to bottom left, $sunset-tertiary, $sunset-primary);
+    -webkit-background-clip: text;
+    color: transparent;
+}

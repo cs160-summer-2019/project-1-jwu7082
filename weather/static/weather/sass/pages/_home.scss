@@ -30,7 +30,12 @@
 }
 
 .section-info {
-    height: 40vh; // placeholder
+    background-color: #e2e5e9;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+//    height: 40vh; // placeholder for development
+    
 //    background-image: 
 //        linear-gradient(45deg, 
 //            $sunset-primary 0%,
@@ -39,7 +44,32 @@
 //            $sunset-primary);
 //    background-color: $light-gray-1;
 //    background-color: $sunset-tertiary;
-    background-color: #ddd;
+    
+    .card-container {
+//        background-color: red; // for testing
+        background-color: $white;
+        border-radius: 4px;
+        box-shadow: 0 1rem 2rem rgba(#000, .2);
+        text-transform: uppercase;
+        font-weight: 700; // try 500?
+        font-size: 5rem;
+        padding: 2rem;
+        margin: 8rem;
+        &:not(:last-child) { // first col of ea row
+//            background-color: blue; // for testing
+            margin-right: 0;
+        }
+    }
+    
+    .row {
+        &:not(:last-child) { // first row
+//             background-color: black; // for testing
+            .card-container {
+//                background-color: black; // for testing
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .section-map {
