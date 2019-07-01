@@ -1,6 +1,6 @@
 # P1
 * In-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
-* Front-end created from scratch using Sass (SCSS) and minimal Bootstrap (Grid and carousel). 
+* Front-end created using Sass (SCSS), minimal Bootstrap (Grid and carousel), and the Mapbox API. 
 
 ### Index
 * File: `weather/templates/weather/index.html`
@@ -31,8 +31,8 @@
 * Mile drop-down menu on map to adjust radial distance of nearby cities
 * Button toggles to switch between Fahrenheit/Celsius or Hourly/Daily forecasts
 
-#### App Preview: No Alert
+#### App Preview: No Extreme Weather Alert
 ![](app_no-alert.gif)
 
-#### App Preview: With Alert
+#### App Preview: With Extreme Weather Alert
 ![](app_alert.gif)
