@@ -15,7 +15,7 @@
 
 ### URLs to access
 * Index: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
-* Includes forecast (single location) and comparison across multiple locations
+  * Includes forecast (single location) and comparison across multiple locations
 
 * Forecast (single location) no alert: `weather/templates/weather/`
 * Forecast (single location) with alert: `weather/templates/weather/warning/`
