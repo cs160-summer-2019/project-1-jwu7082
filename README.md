@@ -23,6 +23,8 @@
 * Comparison across locations with alert: `weather/templates/weather/warning/`
 
 ### App Preview/Information
+* The app was intended to change gradient colors based on the time of day. The previews below are for sunset.
+
 #### Missing features from wireframe: 
 * Temperature labels on map location markers 
 * Time selector to change the hour of the displayed temperatures on both the map and saved city cards (enables users to view forecasts of nearby/saved locations at a specific time)
