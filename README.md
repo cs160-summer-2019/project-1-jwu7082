@@ -1,20 +1,28 @@
 # P1
-Find an in-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
+In-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
 
 ### Index
-File: `weather/templates/weather/index.html`
-URL: `http://<your host IP here>:8000/weather/`
+* File: `weather/templates/weather/index.html`
+* URL: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
 
-### Files to edit
-* Forecast (single location) no alert: `weather/templates/weather/forecast.html`
-* Forecast (single location) with alert: `weather/templates/weather/forecast-alert.html`
-* Comparison across locations no alert: `weather/templates/weather/comparison.html`
-* Comparison across locations with alert: `weather/templates/weather/comparison-alert.html`
+### Files Edited
+* Forecast (single location) no alert: `weather/templates/weather/index.html`
+* Forecast (single location) with alert: `weather/templates/weather/warning.html`
+* Comparison across locations no alert: `weather/templates/weather/index.html`
+* Comparison across locations with alert: `weather/templates/weather/warning.html`
 * CSS for styling: `weather/static/weather/css/style.css`
 
+#### App Preview: No Alert
+![](app_no-alert.gif)
+
+#### App Preview: With Alert
+![](app_alert.gif)
+
 ### URLs to access
-* Index: `http://<your host IP here>:8000/weather/`
-* Forecast (single location) no alert: `weather/templates/weather/forecast/`
-* Forecast (single location) with alert: `weather/templates/weather/forecast/alert/`
-* Comparison across locations no alert: `weather/templates/weather/comparison/`
-* Comparison across locations with alert: `weather/templates/weather/comparison/alert/`
+* Index: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
+* Includes forecast (single location) and comparison across multiple locations
+
+* Forecast (single location) no alert: `weather/templates/weather/`
+* Forecast (single location) with alert: `weather/templates/weather/warning/`
+* Comparison across locations no alert: `weather/templates/weather/`
+* Comparison across locations with alert: `weather/templates/weather/warning/`
