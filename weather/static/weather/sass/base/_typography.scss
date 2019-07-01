@@ -6,7 +6,7 @@ body {
 }
 
 .gradient-text {
-    background-image: linear-gradient(to bottom left, $sunset-tertiary, $sunset-primary);
+    background-image: linear-gradient(to bottom left, $sunset-tertiary 65%, $sunset-primary);
     -webkit-background-clip: text;
     color: transparent;
 }

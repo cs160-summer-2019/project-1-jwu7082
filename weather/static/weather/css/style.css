@@ -15,7 +15,7 @@ body {
   color: #333; }
 
 .gradient-text {
-  background-image: linear-gradient(to bottom left, #ffaf7b, #d76d77);
+  background-image: linear-gradient(to bottom left, #ffaf7b 65%, #d76d77);
   -webkit-background-clip: text;
   color: transparent; }
 
@@ -114,15 +114,17 @@ body {
       padding: 0; }
 
 .section-info {
-  background-color: #e2e5e9;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #d76d77 0%, #ffaf7b 40%, #ffaf7b 60%, #d76d77);
+  color: #ffaf7b; }
   .section-info .card-container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     font-size: 5rem;
     padding: 2rem;
@@ -131,6 +133,11 @@ body {
       margin-right: 0; }
   .section-info .row:not(:last-child) .card-container {
     margin-bottom: 0; }
+  .section-info .info {
+    margin: 3rem; }
+    .section-info .info__icon {
+      font-size: 12rem;
+      margin: 2rem 0 4rem 0; }
 
 .section-map .map {
   z-index: 2;

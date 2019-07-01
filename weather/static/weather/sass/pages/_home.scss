@@ -30,27 +30,29 @@
 }
 
 .section-info {
-    background-color: #e2e5e9;
+//    background-color: $dark-gray-5;
     margin: 0;
     padding: 0;
     overflow: hidden;
 //    height: 40vh; // placeholder for development
     
-//    background-image: 
-//        linear-gradient(45deg, 
-//            $sunset-primary 0%,
-//            $sunset-tertiary 40%,
-//            $sunset-tertiary 60%,
-//            $sunset-primary);
+    background-image: 
+        linear-gradient(45deg, 
+            $sunset-primary 0%,
+            $sunset-tertiary 40%,
+            $sunset-tertiary 60%,
+            $sunset-primary);
 //    background-color: $light-gray-1;
 //    background-color: $sunset-tertiary;
+    color: $sunset-tertiary;
     
     .card-container {
 //        background-color: red; // for testing
-        background-color: $white;
+        background-color: rgba($white, .9);
         border-radius: 4px;
         box-shadow: 0 1rem 2rem rgba(#000, .2);
         text-transform: uppercase;
+        text-align: center;
         font-weight: 700; // try 500?
         font-size: 5rem;
         padding: 2rem;
@@ -68,6 +70,14 @@
 //                background-color: black; // for testing
                 margin-bottom: 0;
             }
+        }
+    }
+    
+    .info {
+        margin: 3rem;
+        &__icon {
+            font-size: 12rem;
+            margin: 2rem 0 4rem 0;
         }
     }
 }
