@@ -1,20 +1,40 @@
 # P1
-Find an in-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
+* In-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
+* Front-end created using Sass (SCSS), minimal Bootstrap (Grid and carousel), and the Mapbox API. 
 
 ### Index
-File: `weather/templates/weather/index.html`
-URL: `http://<your host IP here>:8000/weather/`
+* File: `weather/templates/weather/index.html`
+* URL: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
 
-### Files to edit
-* Forecast (single location) no alert: `weather/templates/weather/forecast.html`
-* Forecast (single location) with alert: `weather/templates/weather/forecast-alert.html`
-* Comparison across locations no alert: `weather/templates/weather/comparison.html`
-* Comparison across locations with alert: `weather/templates/weather/comparison-alert.html`
+### Files Edited
+* Forecast (single location) no alert: `weather/templates/weather/index.html`
+* Forecast (single location) with alert: `weather/templates/weather/warning.html`
+* Comparison across locations no alert: `weather/templates/weather/index.html`
+* Comparison across locations with alert: `weather/templates/weather/warning.html`
 * CSS for styling: `weather/static/weather/css/style.css`
 
 ### URLs to access
-* Index: `http://<your host IP here>:8000/weather/`
-* Forecast (single location) no alert: `weather/templates/weather/forecast/`
-* Forecast (single location) with alert: `weather/templates/weather/forecast/alert/`
-* Comparison across locations no alert: `weather/templates/weather/comparison/`
-* Comparison across locations with alert: `weather/templates/weather/comparison/alert/`
+* Index: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
+  * Includes forecast (single location) and comparison across multiple locations
+
+* Forecast (single location) no alert: `weather/templates/weather/`
+* Forecast (single location) with alert: `weather/templates/weather/warning/`
+* Comparison across locations no alert: `weather/templates/weather/`
+* Comparison across locations with alert: `weather/templates/weather/warning/`
+
+### App Preview/Information
+* The app was intended to change gradient colors based on the time of day. The previews below are for sunset.
+
+#### Missing features from wireframe: 
+* Temperature labels on map location markers 
+* Time selector to change the hour of the displayed temperatures on both the map and saved city cards (enables users to view forecasts of nearby/saved locations at a specific time)
+* Sticky button on bottom right corner of city cards to edit list of saved cities 
+* Delete card feature upon clicking a city card
+* Mile drop-down menu on map to adjust radial distance of nearby cities
+* Button toggles to switch between Fahrenheit/Celsius or Hourly/Daily forecasts
+
+#### App Preview: No Extreme Weather Alert
+![](app_no-alert.gif)
+
+#### App Preview: With Extreme Weather Alert
+![](app_alert.gif)
