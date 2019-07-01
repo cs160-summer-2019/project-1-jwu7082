@@ -96,7 +96,7 @@ body {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  margin: 2rem;
+  margin: 4rem;
   color: #878787; }
   .section-forecast .scroll-bar__card {
     display: inline-block;
@@ -116,7 +116,7 @@ body {
 
 .section-info {
   margin: 0;
-  padding: 0;
+  padding: 0rem;
   overflow: hidden;
   background-image: linear-gradient(45deg, #d76d77 0%, #ffaf7b 40%, #ffaf7b 60%, #d76d77);
   color: #ffaf7b; }
@@ -129,7 +129,7 @@ body {
     font-weight: 700;
     font-size: 5rem;
     padding: 2rem;
-    margin: 8rem; }
+    margin: 10rem; }
     .section-info .card-container:not(:last-child) {
       margin-right: 0; }
   .section-info .row:not(:last-child) .card-container {
@@ -159,8 +159,8 @@ body {
     .section-cities .card-container .card {
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 3px;
-      padding: 7rem;
-      margin: 2rem;
+      padding: 6rem;
+      margin: 3rem;
       font-size: 12rem;
       height: 40rem;
       width: 23rem; }

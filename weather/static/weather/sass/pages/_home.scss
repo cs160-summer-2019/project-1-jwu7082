@@ -4,7 +4,7 @@
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
-        margin: 2rem; // check if being applied
+        margin: 4rem; // check if being applied
         color: $dark-gray-4;
         &__card {
             display: inline-block;
@@ -32,7 +32,7 @@
 .section-info {
 //    background-color: $dark-gray-5;
     margin: 0;
-    padding: 0;
+    padding: 0rem;
     overflow: hidden;
 //    height: 40vh; // placeholder for development
     
@@ -56,7 +56,7 @@
         font-weight: 700; // try 500?
         font-size: 5rem;
         padding: 2rem;
-        margin: 8rem;
+        margin: 10rem;
         &:not(:last-child) { // first col of ea row
 //            background-color: blue; // for testing
             margin-right: 0;
@@ -116,8 +116,8 @@
         .card {
             background-color: rgba($white, .9);
             border-radius: 3px;
-            padding: 7rem;
-            margin: 2rem;
+            padding: 6rem;
+            margin: 3rem;
             font-size: 12rem;
             .icon-wrapper {
                 font-size: 12rem;
