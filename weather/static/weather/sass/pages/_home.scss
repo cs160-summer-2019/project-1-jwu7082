@@ -1,14 +1,45 @@
 .section-forecast {
-    height: 20vh; // placeholder
+    // https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
+    .scroll-bar {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin: 2rem; // check if being applied
+        color: $dark-gray-4;
+        &__card {
+            display: inline-block;
+//            box-shadow: 0 1rem 3rem rgba(#000, .2);
+//            background-color: blue; // for testing
+            border-radius: 3px;
+            font-size: 4rem;
+            font-weight: 500;
+            text-align: center;
+            padding: 1rem 5rem;
+            .icon-wrapper {
+                color: $sunset-primary;
+                font-size: 9rem;
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
 }
 
 .section-info {
-    height: 50vh; // placeholder
-    background-image: linear-gradient(45deg, 
-        $sunset-primary 0%,
-        $sunset-tertiary 40%,
-        $sunset-tertiary 60%,
-        $sunset-primary);
+    height: 40vh; // placeholder
+//    background-image: 
+//        linear-gradient(45deg, 
+//            $sunset-primary 0%,
+//            $sunset-tertiary 40%,
+//            $sunset-tertiary 60%,
+//            $sunset-primary);
+//    background-color: $light-gray-1;
+//    background-color: $sunset-tertiary;
+    background-color: #ddd;
 }
 
 .section-map {
@@ -18,7 +49,7 @@
     }
 }
 .section-cities {
-    height: 40vh; // placeholder
+    height: 70vh; // placeholder
     padding-top: 10px;
     background-image: linear-gradient(to left bottom, 
         $sunset-tertiary, 
