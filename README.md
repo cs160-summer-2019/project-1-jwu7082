@@ -8,19 +8,18 @@
 
 ### Files Edited
 * Forecast (single location) no alert: `weather/templates/weather/index.html`
-* Forecast (single location) with alert: `weather/templates/weather/warning.html`
+* Forecast (single location) with alert: `weather/templates/weather/forecast-alert.html`
 * Comparison across locations no alert: `weather/templates/weather/index.html`
-* Comparison across locations with alert: `weather/templates/weather/warning.html`
-* CSS for styling: `weather/static/weather/css/style.css`
+* Comparison across locations with alert: `weather/templates/weather/forecast-alert.html`
+* CSS for styling: `weather/static/weather/css/style.css`, `weather/static/weather/css/warning-style.css`
 
 ### URLs to access
 * Index: http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/
-  * Includes forecast (single location) and comparison across multiple locations
-
-* Forecast (single location) no alert: `weather/templates/weather/`
-* Forecast (single location) with alert: `weather/templates/weather/warning/`
-* Comparison across locations no alert: `weather/templates/weather/`
-* Comparison across locations with alert: `weather/templates/weather/warning/`
+  * Forecast (single location) no alert: `weather/templates/weather/`
+  * Comparison across multiple locations no alert: `weather/templates/weather/`
+* http://project-1-starter-code-jwu7082-jwu7082387298.codeanyapp.com:8000/weather/forecast/alert/
+  * Forecast (single location) with alert: `weather/templates/weather/forecast-alert/`
+  * Comparison across locations with alert: `weather/templates/weather/forecast-alert/`
 
 ### App Preview/Information
 * The app was intended to change gradient colors based on the time of day. The previews below are for sunset.
