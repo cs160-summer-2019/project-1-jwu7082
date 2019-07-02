@@ -23,7 +23,7 @@ body {
   text-align: center !important; }
 
 .header {
-  height: 100vh;
+  height: 82vh;
   background-image: linear-gradient(to left bottom, #3a1c71, #d76d77, #ffaf7b);
   background-size: cover;
   position: relative;
@@ -72,7 +72,7 @@ body {
         border-bottom: 3px solid #d0525e; }
 
 .weather {
-  padding-top: 25rem;
+  padding-top: 15rem;
   position: relative; }
   .weather__city {
     font-size: 5rem;

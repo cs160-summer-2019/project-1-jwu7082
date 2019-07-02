@@ -1,41 +1,75 @@
 .header {
     position: relative;
-    transform: translateY(-40rem);
-    padding-bottom: 40rem;
+}
+.weather {
+    transform: translateY(-15rem);
 }
 
 .alert-card {
+    position: absolute;
     text-align: center;
     z-index: 999;
-/*
-    position: fixed !important;
-    height: 55rem;
-    top: 0 !important;
-*/
-/*
-    visibility: hidden;
-    opacity: 0;
-*/
     overflow: hidden;
-    top: 0%;
-    bottom: 0%;
-    transform: translateY(40rem);
-    font-size: 4rem;
-    font-weight: 500;
-    width: 100%;
+    padding: 3rem;
+    font-size: 4.5rem;
+    position: fixed;
 }
 
 .card-header {
     text-transform: uppercase;
-    padding: 6rem;
-    font-size: 6rem;
+    padding: 3rem;
+    font-size: 5.5rem;
+}
+
+.dismiss-icon {
+    transform: translateX(-1rem);
+}
+
+.dismiss:visited,
+.dismiss:link{
+    float: right;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.card-text {
+    padding: 2rem;
+    border-bottom: solid 3px white;
 }
 
 .card-body {
-    padding: 5rem;
-    font-size: 4rem;
 }
 
-.card-close {
+.alert-icon {
     transform: translateX(-3rem);
+    opacity: 1;
+}
+
+.alert-home__icon {
+    color: red;
+    font-size: 10rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.alert-home {
+    background-color: black;
+    padding: 4rem;
+    opacity: .7;
+    display: inline-block;
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem;
+    width: 70%;
+    transform: translateX(10rem);
+}
+/*
+    position: absolute;
+    top: 30;
+    left: 50%;
+    transform: translate(-50%, -50%);
+*/
 }

@@ -18,22 +18,33 @@
         <!-- MAPBOX -->
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
-       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+<!--       <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />-->
         <link rel="stylesheet" href="../../static/weather/css/style.css" type="text/css">
         <link rel="stylesheet" href="../../static/weather/css/warning-style.css" type="text/css">
+        
+        <script>
+            function closeAlert() {
+                document.getElementById("alert-card").style.opacity = 0;
+            }
+            function openAlert() {
+                document.getElementById("alert-popup").style.opacity = 1;
+            }
+        </script>
     </head>
 
     <body>
        <div class="header">
           <!-- EXTREME WEATHER NOTIFICATION -->
-           <div class="card text-white bg-danger mb-3 alert-card">
+           <div class="card text-white bg-danger mb-3 alert-card" id="alert-card">
           <div class="card-header">
-              <i class="fas fa-window-close card-close"></i>
+              <i class="fas fa-exclamation-triangle alert-icon"></i>
               Extreme Weather Alert
           </div>
           <div class="card-body">
-                <p class="card-text">There is extreme weather in 3 of your saved locations and 2 nearby cities.</p>
-                <p> Tap to see more information.</p>
+                <p class="card-text">There is extreme weather in <b>3 of your saved locations</b> and in <b>2 nearby cities.</b>
+                <br> Tap to see more information.</p>
+                <a class="dismiss" href="javascript:closeAlert();"><i class="fas fa-window-close dismiss-icon"></i> DISMISS</a>
+<!--                <input type="button" value="Dismiss" onclick="closeAlert()"> -->
           </div>
         </div>
 
@@ -57,6 +68,12 @@
                <input type="text" class="search-bar__input" placeholder="Enter city name">
                </form>
            </div>
+            
+            <div class="alert-home">
+                <i class="fas fa-exclamation-triangle alert-home__icon"></i>
+                There is currently extreme weather going on. Tap to view details.
+                
+            </div>
             
              <div class="weather u-center-text">
                  <h2 class="weather__city">Berkeley</h2>
