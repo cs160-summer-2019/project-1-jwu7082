@@ -1,6 +1,6 @@
 # P1
 * In-depth assignment description in the Google Doc [here](https://docs.google.com/document/d/18VBl8AfogpKVgx7QG7TTYnWRRpO8nH_w53q8Rxrk1H4). 
-* Front-end created using Sass (SCSS), minimal Bootstrap (Grid and carousel), and the Mapbox API. 
+* Front-end created using Sass (SCSS), minimal Bootstrap (Grid, carousel, red alert card), and the Mapbox API. 
 
 ### Index
 * File: `weather/templates/weather/index.html`
